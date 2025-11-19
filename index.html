@@ -8,20 +8,31 @@
 
     <style>
         h1 {
-            color: blue;
+             /* RGB (Formato moderno, sin comas) [9] */
+             color: rgb(0 0 0);
         }
 
         .link {
-            color: red;
+           /* Hexadecimal abreviado (#09F es igual a #0099FF) [8] */
+           color: #09F;
         }
 
         #show {
-            background: white;
+             /* Hexadecimal (forma más popular) [7] */
+             color: #FF9900;
         }
 
         body {
             background: Pink;
             /* Estiliza el fondo del documento [6] */
+            /* Palabras clave */
+            color: blue;
+
+            /* RGB con opacidad (se recomienda usar la barra en lugar de rgba) [9] */
+            color: rgb(0 0 0 / 0.1);
+
+            /* HSL (Matiz, Saturación, Luminosidad) [10] */
+            color: hsl(60% 83% 44%);
         }
     </style>
 
