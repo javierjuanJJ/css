@@ -7,29 +7,52 @@
     <title>Document</title>
 
     <style>
+        .link {
+            color: green;
+        }
 
-        .container {
+        /* Hover (Cursor encima) */
+        .link:hover {
+            color: yellow;
+        }
+
+        /* Active (Haciendo click activamente) */
+        .link:active {
             color: blue;
-            font-size: 32px;
-            border: 3px solid blue;
         }
 
-        .child {
-            border: inherit;
-            font-size: revert;
+        /* Focus (Elemento seleccionado, típico en inputs) */
+        .input:focus {
+            outline: 3px solid orangered;
         }
 
+        /* Primer hijo de un contenedor */
+        .link:first-child {
+            color: pink;
+        }
+
+        /* Último hijo de un contenedor */
+        .link:last-child {
+            color: purple;
+        }
+
+        .link:nth-child(2) {
+            color: black;
+        }
+
+        .link:nth-child(3) {
+            color: orange;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="container">
-        Este es un container
-        <div class="child">
-            Hola mundo
-        </div>
-    </div>
+    <a href="#" class="link">Link 1</a>
+    <a href="#" class="link">Link 2</a>
+    <a href="#" class="link">Link 3</a>
+    <a href="#" class="link">Link 4</a>
+    <input type="text" name="name1" id="name1" class="input" />
 </body>
 
 </html>
