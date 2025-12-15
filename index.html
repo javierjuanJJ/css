@@ -8,32 +8,27 @@
 
     <style>
 
-        h1 {
-
-            border-width: 3px;
-            border-style: solid;
-            border-color: currentColor;
-        }
-        body{
-            background-color: oklch(348, 83%, 44% / 50%);
-            color: #000;
+        .container {
+            color: blue;
+            font-size: 32px;
+            border: 3px solid blue;
         }
 
-        .link{
-            color: red;
+        .child {
+            border: inherit;
         }
-        #show{
-            border: 0;
-            color: green;
-        }
+
     </style>
 
 </head>
 
 <body>
-    <h1>Hola</h1>
-    <a class="link" href="#">Enlace</a>
-    <a id="show" href="#">Enlace</a>
+    <div class="container">
+        Este es un container
+        <div class="child">
+            Hola mundo
+        </div>
+    </div>
 </body>
 
 </html>
